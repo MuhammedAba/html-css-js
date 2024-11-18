@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function function1() {
+        console.log('Hello');
+        console.log(2+2);
+      }
+      function1();
+      */
+      function calculateTax(cost,taxPercent = 0.1) {
+        console.log(cost * taxPercent);
+      }
+
+      calculateTax(100,0.5);
+      calculateTax(100); //Default parameter will using.(0.1)
+    </script>
+  </body>
+</html>
