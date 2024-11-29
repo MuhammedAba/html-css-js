@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM Examples</title>
+	</head>
+	<body>
+
+		<p>YouTube Subscribe Button</p>
+		<button class="button-subscribe" onclick="
+			subscribe();
+			/*
+			//First Method
+			if (document.querySelector('.button-subscribe').innerHTML === 'Subscribed') {
+				document.querySelector('.button-subscribe')
+				.innerHTML = 'Subscribe';
+			}
+			else {
+				document.querySelector('.button-subscribe')
+					.innerHTML = 'Subscribed';
+				}
+			*/
+
+			/*
+			//Second Method
+			let buttonElementSubs = document.querySelector('.button-subscribe');
+			console.log(buttonElementSubs.innerText);
+			if(buttonElementSubs.innerText == 'Subscribe') {
+				buttonElementSubs.innerText = 'Subscribed'
+			} else {
+				buttonElementSubs.innerText = 'Subscribe'
+			}
+			//Note : Difference of innerHTML and innerText; innerText remove the spaces.
+			*/
+		">Subscribe
+		</button>
+		<script>
+			function subscribe() {
+				const buttonElementSubs = document.querySelector('.button-subscribe');
+				if(buttonElementSubs.innerText == 'Subscribe') {
+					buttonElementSubs.innerText = 'Subscribed'
+				} else {
+					buttonElementSubs.innerText = 'Subscribe'
+				}
+			}
+		</script>
+	</body>
+</html>
