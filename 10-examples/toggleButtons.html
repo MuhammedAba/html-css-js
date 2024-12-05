@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Examples</title>
+		<style>
+			.toggle {
+				background-color: rgb(230,230,230);
+				font-size: 15px;
+				padding: 5px 15px;
+				border-radius: 15px;
+				cursor: pointer;
+			}
+			.is-toggled {
+				background-color: black;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Toggle Buttons</h2>
+		<button class="btn-gaming-toggle toggle" onclick="
+			let buttonGaming = document.querySelector('.btn-gaming-toggle')
+			if(buttonGaming.classList.contains('is-toggled')) {
+				buttonGaming.classList.remove('is-toggled');
+			} else {
+				buttonGaming.classList.add('is-toggled');
+			}
+		">Gaming</button>
+		<button class="btn-music-toggle toggle" onclick="
+			let buttonMusic = document.querySelector('.btn-music-toggle')
+			if(buttonMusic.classList.contains('is-toggled')) {
+				buttonMusic.classList.remove('is-toggled');
+			} else {
+				buttonMusic.classList.add('is-toggled');
+			}
+		">Music</button>
+		<button class="btn-tech-toggle toggle" onclick="
+			let buttonTech = document.querySelector('.btn-tech-toggle')
+			if(buttonTech.classList.contains('is-toggled')) {
+				buttonTech.classList.remove('is-toggled');
+			} else {
+				buttonTech.classList.add('is-toggled');
+			}
+		">Tech</button>
+
+		<script>
+		</script>
+	</body>
+</html>
