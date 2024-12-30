@@ -15,4 +15,4 @@ Setup :
 
 
 Features :
-JAvaScripts is case-sensitive
+JavaScripts is case-sensitive
