@@ -8,10 +8,11 @@ function addTodo() {
     printList()
 }
 function printList() {
-    let p = document.querySelector(".todo-lists-p");
-    p.innerText = " "
+    let htmlList = ""
    for (let i=0; i<todoList.length; i++) {
         const todo = todoList[i];
-        p.innerText += todo + "\n" ;
+        const html = `<p> ${todo} </p>`
+        htmlList += html
     }
+    document.querySelector(".todo-lists-html").innerHTML = htmlList
 }
