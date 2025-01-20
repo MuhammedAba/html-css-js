@@ -1,7 +1,7 @@
 const todoList = [];
 
 function addTodoFirst() {
-    const inputElement = document.querySelector('.js-name-input-first');
+    const inputElement = document.querySelector('.js-name-input');
     const name = inputElement.value;
     todoList.push(name);
     console.log(todoList);
